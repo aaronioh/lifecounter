@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="edu.washington.aaronioh.lifecounter.MainActivity">
+
+        <TextView
+            android:id="@+id/textP1"
+            android:layout_width="192dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Player 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintStart_toStartOf="@+id/buttonP1Add"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textP1Life"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/starting_health"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:freezesText="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textP1"
+            app:layout_constraintEnd_toEndOf="@+id/buttonP1Sub5" />
+
+        <Button
+            android:id="@+id/buttonP1Add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP1Sub"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textP1" />
+
+        <Button
+            android:id="@+id/buttonP1Sub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP1Add5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP1Add"
+            app:layout_constraintTop_toBottomOf="@+id/textP1" />
+
+        <Button
+            android:id="@+id/buttonP1Add5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add5"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP1Sub5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP1Sub"
+            app:layout_constraintTop_toBottomOf="@+id/textP1Life" />
+
+        <Button
+            android:id="@+id/buttonP1Sub5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP1Add5"
+            app:layout_constraintTop_toBottomOf="@+id/textP1Life" />
+
+        <TextView
+            android:id="@+id/textP2"
+            android:layout_width="192dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Player 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintStart_toStartOf="@+id/buttonP2Add"
+            app:layout_constraintTop_toBottomOf="@+id/buttonP1Sub" />
+
+        <TextView
+            android:id="@+id/textP2Life"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/starting_health"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:freezesText="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textP2"
+            app:layout_constraintEnd_toEndOf="@+id/buttonP2Sub5" />
+
+        <Button
+            android:id="@+id/buttonP2Add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP2Sub"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textP2" />
+
+        <Button
+            android:id="@+id/buttonP2Sub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP2Add5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP2Add"
+            app:layout_constraintTop_toBottomOf="@+id/textP2" />
+
+        <Button
+            android:id="@+id/buttonP2Add5"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add5"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP2Sub5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP2Sub"
+            app:layout_constraintTop_toBottomOf="@+id/textP2Life" />
+
+        <Button
+            android:id="@+id/buttonP2Sub5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP2Add5"
+            app:layout_constraintTop_toBottomOf="@+id/textP2Life" />
+
+        <TextView
+            android:id="@+id/textP3"
+            android:layout_width="192dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Player 3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintStart_toStartOf="@+id/buttonP3Add"
+            app:layout_constraintTop_toBottomOf="@+id/buttonP2Sub" />
+
+        <TextView
+            android:id="@+id/textP3Life"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/starting_health"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:freezesText="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textP3"
+            app:layout_constraintEnd_toEndOf="@+id/buttonP3Sub5" />
+
+        <Button
+            android:id="@+id/buttonP3Add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP3Sub"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textP3" />
+
+        <Button
+            android:id="@+id/buttonP3Sub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP3Add5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP3Add"
+            app:layout_constraintTop_toBottomOf="@+id/textP3" />
+
+        <Button
+            android:id="@+id/buttonP3Add5"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add5"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP3Sub5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP3Sub"
+            app:layout_constraintTop_toBottomOf="@+id/textP3Life" />
+
+        <Button
+            android:id="@+id/buttonP3Sub5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP3Add5"
+            app:layout_constraintTop_toBottomOf="@+id/textP3Life" />
+
+        <TextView
+            android:id="@+id/textP4"
+            android:layout_width="192dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Player 4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintStart_toStartOf="@+id/buttonP4Add"
+            app:layout_constraintTop_toBottomOf="@+id/buttonP3Sub" />
+
+        <TextView
+            android:id="@+id/textP4Life"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/starting_health"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:freezesText="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textP4"
+            app:layout_constraintEnd_toEndOf="@+id/buttonP4Sub5" />
+
+        <Button
+            android:id="@+id/buttonP4Add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP4Sub"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textP4" />
+
+        <Button
+            android:id="@+id/buttonP4Sub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP4Add5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP4Add"
+            app:layout_constraintTop_toBottomOf="@+id/textP4" />
+
+        <Button
+            android:id="@+id/buttonP4Add5"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add5"
+            app:layout_constraintEnd_toStartOf="@+id/buttonP4Sub5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP4Sub"
+            app:layout_constraintTop_toBottomOf="@+id/textP4Life" />
+
+        <Button
+            android:id="@+id/buttonP4Sub5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonP4Add5"
+            app:layout_constraintTop_toBottomOf="@+id/textP4Life" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
